@@ -1,0 +1,31 @@
+public class MetodyProduct {
+	String name;
+	double price;
+	
+	//metoda która będzie pobierana
+	String getMetodyProductInfo(){
+		return name + " : " + price;
+	}
+} 
+
+
+public class MetodaShop {
+
+	public static void main(String[] args) {
+		
+		MetodyProduct[] products = new MetodyProduct[2];
+		
+		products[0] = new MetodyProduct();
+		products[0].name = "Samsung Syncmaster";
+		products[0].price = 700.0;
+		
+		products[1] = new MetodyProduct();
+		products[1].name = "HP Probook 450";
+		products[1].price = 30000.0;
+		
+		System.out.println("Tablica ukazuje dotępne produkty w sklepie: ");
+		//pobranie metody
+		System.out.println(products[0].getMetodyProductInfo());
+		System.out.println(products[1].getMetodyProductInfo());
+	}
+}
