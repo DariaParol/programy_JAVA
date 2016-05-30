@@ -1,0 +1,35 @@
+public class ThisProduct{
+		String name;
+		double price;
+		
+	// konstruktory
+		ThisProduct(String name, double price){
+			this.name = name;
+			this.price = price;
+	}
+	
+		ThisProduct(String name) {
+			this.name = name;
+	}
+		
+		
+	//metoda która będzie pobierana
+		String getThisProductInfo(){
+			return name + " : " + price;
+}}
+
+
+public class ThisShop {
+	public static void main(String[] args) {
+		
+		ThisProduct[] products = new ThisProduct[2];
+		
+			products[0] = new ThisProduct("Samsung Syncmaster",700.0);
+			products[1] = new ThisProduct("HP Probook 450",30000.0);
+		
+		System.out.println("Zadanie wykonane! W sklepie mamy: ");
+		//pobranie metody
+		System.out.println(products[0].getThisProductInfo());
+		System.out.println(products[1].getThisProductInfo());
+	}
+}
