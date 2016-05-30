@@ -1,0 +1,11 @@
+public class Loops1Increment {
+
+	public static void main(String[] args) {
+		int x = 1; 
+		x++;
+		System.out.println("Dodajemy 1 to mamy " + x);
+		x--;
+		x--;
+		System.out.println("Dodajemy 2 to mamy " +x);
+	}
+}
