@@ -1,0 +1,23 @@
+public class Loops1 {
+	public static void main(String[] args) {
+		int[] array = new int[50];
+		
+		//licznik pętli
+		int i = 0;
+		
+		//wypełniamy tabelę
+		while(i<array.length) {
+			array[i] = i +1;
+			i = i + 1;
+		}
+		
+		//zerujemy licznik
+		i = 0;
+		
+		//wyświetlamy wartości
+		do {
+			System.out.println(array[i] + "; ");
+			i = i+1;
+		} while(i < array.length);
+	}
+}
