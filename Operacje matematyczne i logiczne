@@ -1,0 +1,14 @@
+public class Arithmetic {
+	public static void main(String[] args) {
+		int num1 = 5;
+		int num2 = 3;
+		
+		//wynik mnożenia
+		int num3 = num1*num2; 
+		System.out.println(num3);
+		
+		//czy num1 jest większe od num3?
+		boolean czywieksze = num1 > num3;
+		System.out.println(czywieksze);	
+	}
+}
