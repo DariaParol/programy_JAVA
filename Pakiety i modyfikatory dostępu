@@ -1,0 +1,24 @@
+package UczymySieJava;
+
+public class ThisCar {
+		public String marka;
+		public String model;
+		public int rokProdukcji;
+		public double mocSilnika;
+		
+		//konstruktor 2
+		public ThisCar(String marka, String model){
+			this.marka = marka;
+			this.model = model;
+		}
+		//konstruktor 
+		public ThisCar(String marka, String model, int rokProdukcji, double mocSilnika){
+			this(marka, model);
+			this.rokProdukcji = rokProdukcji;
+			this.mocSilnika = mocSilnika;	
+	}
+		//metoda która pokaże opis samochodu
+		public String getThisCarInfo() {
+			return  " - " + marka + " " + model + ", rok produkcji " + rokProdukcji + " , moc silnika " + mocSilnika + ".";
+		}
+}
