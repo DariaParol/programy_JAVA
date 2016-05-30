@@ -1,0 +1,14 @@
+public class Shop {
+	public static void main(String[] args) {
+		
+		String produkt1 = "SamsungSyncmaster";
+		String produkt2 = "HPProbook450";
+		
+		int cenaProdukt1 = 700;
+		int cenaProdukt2 = 3000;
+		
+		System.out.println("Poniżej umieszczony jest spis produktów:");
+		System.out.println("1. " +produkt1 + " " + cenaProdukt1 + "zł.");
+		System.out.println("2. " +produkt2 + " " + cenaProdukt2 + "zł.");
+	}
+}
