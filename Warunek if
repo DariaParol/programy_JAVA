@@ -1,0 +1,17 @@
+public class Main {
+
+	public static void main(String[] args) {
+		int a = 13;
+		int b = 31;
+		
+		if(a==b) {
+			System.out.println("Liczba a i b są równe.    " + a + " = " + b );
+		} else {
+			if(a > b) {
+			System.out.println("Liczba a jest większa od b.    " + a + " > " + b );
+		} else {
+			System.out.println("Liczba b jest większa od a.     " + a + " < " + b);
+		}
+	}
+}
+}
