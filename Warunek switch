@@ -1,0 +1,24 @@
+public class Exponential {
+
+	public static void main(String[] args) {
+		int numer = 9;
+		int option = 3;
+		switch (option) {
+		
+		case 1:
+			System.out.println(numer + " do potęgi 1 = " + numer);
+			break;
+		case 2:
+			System.out.println(numer + " do potęgi 2 = " + numer*numer);
+			break;
+		case 3:
+			System.out.println(numer + " do potęgi 3 = " + numer*numer*numer);
+			break;
+		case 4:
+			System.out.println(numer + " do potęgi 4 = " + numer*numer*numer*numer);
+			break;
+		default:
+			System.out.println("Wybrano złą opcję.");
+		}
+	}
+}
