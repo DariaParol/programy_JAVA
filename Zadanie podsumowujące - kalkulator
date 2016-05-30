@@ -1,0 +1,37 @@
+public class Calculator {
+
+		double add(double a, double b){
+			return a + b;			
+		}
+		
+		double subtract(double a, double b){
+			return a - b;			
+		}
+		
+		double multiply(double a, double b){
+			return a * b;			
+		}
+	
+		double divide(double a, double b){
+			return a / b;			
+		}
+}
+
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		double a = 13;
+		double b = 31;
+		
+	Calculator calc = new Calculator();
+	
+	System.out.println(a + " + " +  b + " = " + calc.add(a, b));
+	System.out.println(a + " - " +  b + " = " + calc.subtract(a, b));
+	System.out.println(a + " * " +  b + " = " + calc.multiply(a, b));
+	System.out.println(a + " / " +  b + " = " + calc.divide(a, b));
+	}
+}
