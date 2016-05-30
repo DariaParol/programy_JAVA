@@ -1,0 +1,34 @@
+public class MultiArray {
+
+	public static void main(String[] args) {
+		
+		//tablica liczb całkowitych o wymiarze 2x2
+		int[][]multiArray = new int[2][2];
+		
+		//tablica liczb zmiennoprzecinkowych, która składa się z tablic o różnych rozmiarach
+		double[][]multiArray2 = new double[3][];
+		multiArray2[0] = new double [3];
+		multiArray2[1] = new double [2];
+		multiArray2[2] = new double [1];
+		
+		// w wyniku tablicy multiArray2 otrzymujemy strukturę tablicy:
+		/* XXX
+		 * XX
+		 * X
+		 */
+		
+		//z wpisywaniem konkretnych wartości:
+		double[][]multiArray3 = new double[3][];
+		multiArray2[0] = new double []{0,1,2};
+		multiArray2[1] = new double []{3,4};
+		multiArray2[2] = new double []{5};
+		
+		// w wyniku tablicy multiArray3 otrzymujemy wypełnioną tablicę:
+		/* 0,1,2
+		 * 3,4
+		 * 5
+		 */
+		
+		System.out.println(multiArray3);
+	}
+}
