@@ -1,0 +1,7 @@
+public class ArgTest {
+
+	public static void main(String[] args) {
+		System.out.println("Witaj " + args[0]);
+		System.out.println("Czy lubisz " + args[1]);
+	}
+}
