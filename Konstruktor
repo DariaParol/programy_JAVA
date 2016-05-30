@@ -1,0 +1,30 @@
+public class KonstrukctoProduct {
+		String name;
+		double price;
+		
+	// konstruktor przyjmujący 2 argumenty
+		KonstrukctoProduct(String n, double p){
+			name = n;
+			price = p;
+		}
+		
+	//metoda która będzie pobierana
+		String getMetodyProductInfo(){
+			return name + " : " + price;
+}}
+
+
+public class KonstruktorShop {
+	public static void main(String[] args) {
+		
+		KonstrukctoProduct[] products = new KonstrukctoProduct[2];
+		
+			products[0] = new KonstrukctoProduct("Samsung Syncmaster",700.0);
+			products[1] = new KonstrukctoProduct("HP Probook 450",30000.0);
+		
+		System.out.println("Dzięki konstruktorowi wiemy, że w sklepie mamy poniższe produkty: ");
+		//pobranie metody
+		System.out.println(products[0].getMetodyProductInfo());
+		System.out.println(products[1].getMetodyProductInfo());
+	}
+}
