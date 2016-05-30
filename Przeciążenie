@@ -1,0 +1,50 @@
+public class ZadanieCar {
+	String marka;
+	String model;
+	int rokProdukcji;
+	double mocSilnika;
+	
+	//konstruktor przyjmujący 4 argumenty: (inicjuje pola)
+	ZadanieCar(String mar, String mod, int rok, double moc){
+		marka = mar;
+		model = mod;
+		rokProdukcji = rok;
+		mocSilnika = moc;
+}
+
+	//konstruktor przyjmujący 2 argumenty: (inicjuje pola)
+	ZadanieCar(String mar, String mod){
+		marka = mar;
+		model = mod;
+}
+	
+	//metoda która pokaże opis samochodu
+	String getZadanieCarInfo() {
+		return  " - " + marka + " " + model + ", rok produkcji " + rokProdukcji + " , moc silnika " + mocSilnika + ".";
+	}
+		
+	// metoda, która zwiększa moc silnika
+	void upgrade(int moc) {
+		mocSilnika = mocSilnika + moc;
+	}
+}
+
+
+public class ZadanieCarDiagnostic {
+	public static void main(String[] args) {
+		ZadanieCar[] auto = new ZadanieCar[3];
+			
+		auto[0] = new ZadanieCar("Audi", "A4", 2005, 150);
+		auto[1] = new ZadanieCar("vw", "Golf", 2008, 170);
+		auto[2] = new ZadanieCar("Opel", "Corsa");
+		
+		//tuning
+		auto[0].upgrade(30);
+		auto[1].upgrade(20);
+		
+		System.out.println("Przeciążenie metody:");
+		System.out.println(auto[0].getZadanieCarInfo());
+		System.out.println(auto[1].getZadanieCarInfo());
+		System.out.println(auto[2].getZadanieCarInfo());
+	}
+}
